@@ -1,11 +1,12 @@
-function Match() {
+function Match(props) {
+  const { players, winner, scoreDifference } = props;
   return (
     <article className="Match">
       <h1>
-        Disguised Lizard <span>vs</span> DrSpiteful
+        {players[0]} <span>vs</span> {players[1]}
       </h1>
-      <h2>Disguised Lizard is the winner by 1!</h2>
-      <h2>No winners yet!</h2>
+      {winner && <h2>Disguised Lizard is the winner by 1!</h2>}
+      {!winner && <h2>No winners yet!</h2>}
     </article>
   );
 }
