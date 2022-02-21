@@ -1,4 +1,4 @@
-import Match from 'Match.js';
+import Match from './Match';
 
 function MatchList() {
   return (
